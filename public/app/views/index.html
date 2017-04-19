@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MEAN Stack Tutorial</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="https://unpkg.com/angular-ui-router@1.0.0-rc.1/release/angular-ui-router.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+
+    <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
+    <script src="app/controllers/userCtrl.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/css/main.css"><!-- css from sass -->
+  </head>
+
+  
+  <body ng-app="userApp">
+
+
+
+    <!-- Fixed navbar -->
+    <div class="myNavBar">
+      <a ui-sref="home"><div class="nav-btn-dev">Home</div></a>
+      <a ui-sref="about"><div class="nav-btn-dev">About</div></a>
+      <a ui-sref="register"><div class="nav-btn-dev">Register</div></a>
+    </div>
+
+    <hr>
+    <ui-view></ui-view>
+
+  </body>
+</html>
